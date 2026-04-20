@@ -1,1 +1,1 @@
-# sample-slite
+# sample-site
