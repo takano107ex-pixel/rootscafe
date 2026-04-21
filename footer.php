@@ -1,6 +1,6 @@
         <footer>
             
-            <p class="copyright">©Takano Sayaka Portfolio</p>
+            <p class="copyright">©ROOTS CAFE</p>
         </footer>
         <?php wp_footer(); ?>
     </body>

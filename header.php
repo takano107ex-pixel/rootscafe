@@ -15,8 +15,7 @@
     <body>
         <header class="drawer drawer--right">
             <div class="logo">
-                <h1>たかの さやか</h1>
-                <h2>ポートフォリオサイト</h2>
+                <h1><a href="<?php bloginfo(); ?>">ROOTS CAFE</a></h1>
             </div>
             <button type="button" class="drawer-toggle drawer-hamburger">
                 <span class="sr-only">toggle navigaion</span>
@@ -24,11 +23,10 @@
             </button>
             <nav class="drawer-nav">
                 <ul class="drawer-menu">
-                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#"><span style="--nav: 0" class="nav__text">T</span><span style="--nav: 1" class="nav__text">O</span><span style="--nav: 2" class="nav__text">P</span></a></li>
-                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#about"><span style="--nav: 0" class="nav__text">A</span><span style="--nav: 1" class="nav__text">B</span><span style="--nav: 2" class="nav__text">O</span><span style="--nav: 3" class="nav__text">U</span><span style="--nav: 4" class="nav__text">T</span></a></li>
-                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#skill"><span style="--nav: 0" class="nav__text">S</span><span style="--nav: 1" class="nav__text">K</span><span style="--nav: 2" class="nav__text">I</span><span style="--nav: 3" class="nav__text">L</span><span style="--nav: 4" class="nav__text">L</span></a></li>
-                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#work"><span style="--nav: 0" class="nav__text">W</span><span style="--nav: 1" class="nav__text">O</span><span style="--nav: 2" class="nav__text">R</span><span style="--nav: 3" class="nav__text">K</span></a></li>
-                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#contact"><span style="--nav: 0" class="nav__text">C</span><span style="--nav: 1" class="nav__text">O</span><span style="--nav: 2" class="nav__text">N</span><span style="--nav: 3" class="nav__text">T</span><span style="--nav: 4" class="nav__text">A</span><span style="--nav: 5" class="nav__text">C</span><span style="--nav: 5" class="nav__text">T</span></a></li>
+                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#concept">CONCEPT</a></li>
+                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#menu">MENU</a></li>
+                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#gallery">GALLERY</a></li>
+                    <li class="drawer-menu-item"><a href="<?php bloginfo(); ?>#access">ACCESS</a></li>
                 </ul>
                 </ul>
             </nav>

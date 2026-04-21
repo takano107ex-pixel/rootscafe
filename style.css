@@ -1,5 +1,306 @@
-/*!
-Theme Name: Roots Cafe
-Author: Takano Sayaka
-Version: 1.0
-*/
+/* ***********************************
+ *
+ *    Ire's CSS Reset & Base
+ *
+ * *********************************** */
+/* Reset margin, padding, border
+ * *********************************** */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Typography
+ * *********************************** */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Layout
+ * *********************************** */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Elements
+ * *********************************** */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+/* Attributes & states
+ * *********************************** */
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Utility classes
+ * *********************************** */
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  left: -9999px;
+  top: -9999px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.15rem;
+}
+
+main {
+  margin: 0 13%;
+}
+@media (max-width: 768px) {
+  main {
+    margin: 0 5%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p, a {
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media (max-width: 768px) {
+  p, a {
+    font-size: 0.9em;
+  }
+}
+
+header {
+  margin: 1.5rem 0;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0 5%;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    z-index: 100;
+  }
+}
+header .logo h1 {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+header .logo h2 {
+  font-size: 0.8em;
+}
+header nav ul {
+  display: flex;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0rem;
+    padding-top: 9rem !important;
+  }
+}
+header nav ul li {
+  overflow: hidden;
+}
+header nav ul li a {
+  --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+  overflow: hidden;
+  line-height: 1;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+}
+@media (any-hover: hover) {
+  header nav ul li a:hover .nav__text {
+    translate: 0 -1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .drawer-hamburger {
+    position: static !important;
+    padding: 18px 0 30px !important;
+  }
+  .drawer--right .drawer-nav {
+    right: -100% !important;
+  }
+  .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+    right: 0 !important;
+  }
+  .drawer-nav {
+    width: 100% !important;
+  }
+  .drawer-menu-item {
+    padding: 1.3em 0 !important;
+    margin: 0 1.3em;
+    font-size: 1em !important;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+.nav__text {
+  display: inline-block;
+  translate: 0 0;
+  text-shadow: 0 1em 0 currentColor;
+  transition: translate 0.6s var(--ease-out-cubic) calc(0.1s * var(--nav));
+}
+@media (max-width: 768px) {
+  .nav__text {
+    text-shadow: none;
+  }
+}
+
+.billboard {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/01.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.billboard__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.billboard__label {
+  font-size: 0.9rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.billboard__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.billboard__btn {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.8rem 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  transition: background 0.3s, color 0.3s;
+}
+.billboard__btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

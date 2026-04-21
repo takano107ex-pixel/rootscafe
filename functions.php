@@ -8,7 +8,7 @@ function rootscafe_scripts() {
     wp_enqueue_script('gsap-scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js', array('gsap'), null, true);
 
     // main.js
-    wp_enqueue_script('rootscafe-script', get_template_directory_uri() . '/js/main.js', array('gsap', 'gsap-scrolltrigger'), filemtime(get_template_directory() . '/js/main.js'), true);
+    wp_enqueue_script('rootscafe-script', get_template_directory_uri() . '/js/main.js', array('gsap', 'gsap-scrolltrigger'), filemtime(get_template_directory() . '/js/default.js'), true);
 }
 add_action('wp_enqueue_scripts', 'rootscafe_scripts');
 
